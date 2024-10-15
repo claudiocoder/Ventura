@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -6,7 +6,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import Menu from "./components/Menu";
 config.autoAddCss = false;
 
-export const roboto = Roboto({
+const roboto = Roboto({
   subsets: ["latin"],
   display: "swap",
   weight: ["400"],
